@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  background-image: linear-gradient(120deg, #d9643a, #e7bcad);
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 10rem auto 0 auto;
+}
+
+.heading {
+  font-size: 3rem;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+#todo-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  height: 50px;
+}
+
+.todo-input {
+  height: 50px;
+  display: flex;
+}
+
+.todo-input input {
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+.submit-btn {
+  width: 50px;
+  border: none;
+  outline: none;
+  background: white;
+  color: #d9643a;
+  transition: all 0.3s ease-in;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #d9643a;
+  color: white;
+}
+
+#selector {
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+}
+
+.todo-items {
+  list-style: none;
+  margin-top: 3rem;
+  justify-content: center;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  min-height: 50px;
+  margin: 0 auto 1rem auto;
+  transition: all 0.3s ease-in;
+}
+
+.todo-li {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 30px;
+  flex: 1;
+}
+
+.buttons {
+  width: 100px;
+}
+
+.complete-btn {
+  background: green;
+  min-height: 50px;
+  color: white;
+  width: 50px;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.trash-btn {
+  background: #d9643a;
+  min-height: 50px;
+  color: white;
+  width: 50px;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.submit {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.trash {
+  transform: rotate(5deg);
+  opacity: 0;
+}
+
+i {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 425px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .todo-input input {
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .todo-li {
+    font-size: 16px;
+  }
+}
